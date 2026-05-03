@@ -1,0 +1,31 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:fit-content;
+    // padding-left:35px;
+    // padding-right:35px;
+    border-radius: 8px;
+    background: var(--btn-bg-color);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+    &--text {
+        display: block;
+        padding:15px 35px;
+        color: #032E32;
+        text-align: center;
+        font-family: "Plus Jakarta Sans";
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &:active {
+        transform: scale(0.7);
+    }
+}

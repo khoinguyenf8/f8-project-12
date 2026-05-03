@@ -1,0 +1,114 @@
+.profile {
+    position: relative;
+    margin-left: auto;
+
+    &__avt {
+
+        &--img {
+            height:58px;
+            border-radius: 10px;
+            object-fit: contain;
+            cursor: pointer;
+        }
+    }
+}
+
+.dropdown {
+    position: absolute;
+    top:70px;
+    right:-20px;
+    z-index: 1;
+    transition: all 0.2s ease;
+    
+    &.hide {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 12px;
+
+        &--arrow {
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            width: 45px;
+            object-fit: contain;
+        }
+
+        &--row {
+            display: flex;
+            align-items: center;
+            gap:20px;
+            padding:17px 25px 0 25px;
+        }
+
+        &--avt {
+            width:30px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        &--name {
+            color: var(--dark-green-color);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 30px; /* 166.667% */
+            white-space: nowrap;
+        }
+
+        &--separator {
+            padding:0 25px;
+            margin:30px 0 23px 0;
+            
+            &-inner {
+                width:100%;
+                height:1px;
+                background-color: var(--dark-green-color);
+            }
+        }
+
+        &--list {
+            display: flex;
+            flex-direction: column;
+            padding-bottom:10px;
+            cursor: pointer;
+        }
+
+        &--item {
+            display: flex;
+            align-items: center;
+            gap:20px;
+            padding:10px 25px;
+
+            &:hover {
+                background-color: #DCDCDC;
+            }
+        }
+
+        &--icon {
+            width:30px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        &--text {
+            display: block;
+            width:100%;
+            color: var(--dark-green-color);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px; /* 166.667% */
+            white-space: nowrap;
+        }
+    }
+}

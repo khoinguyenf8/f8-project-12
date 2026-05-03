@@ -1,0 +1,114 @@
+.courses-details {
+    background-color: var(--mint-green-color);
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:30px;
+        height:100vh;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        
+        &--heading {
+            color: var(--dark-green-color);
+            font-size: 4.2rem;
+            font-weight: 800;
+            line-height:123.81%; /* 123.81% */
+        }
+
+        &--desc {
+            color: var(--dark-green-color);
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 166.667%; /* 166.667% */
+            padding:20px 0;
+        }
+
+        &--price {
+            color: var(--dark-green-color);
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 145.455%; /* 145.455% */
+        }
+
+        &--rating {
+            display: flex;
+            align-items: center;
+            gap:12px;
+            margin:20px 0 28px;
+        }
+
+        &--number {
+            color: var(--dark-green-color);
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height:166.667% ; /* 166.667% */
+        }
+
+        &--question {
+            color: var(--dark-green-color);
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height:  145.455%; /* 145.455% */
+        }
+
+        &--list {
+            display: flex;
+            flex-direction: column;
+            gap:16px;
+            padding:28px 0 40px;
+        }
+
+        &--item {
+            display: flex;
+            align-items: center;
+            gap:12px;
+        }
+
+        &--text {
+            color: var(--dark-green-color);
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 166.667%; /* 166.667% */
+        }
+
+        &--wrap-btn {
+            display: flex;
+            align-items: center;
+            gap:20px;
+        }
+
+        &--bg-color {
+            background-color: var(--dark-green-color);
+        }
+
+        &--text-color {
+            color: #fff;
+        }
+    }
+
+    &__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex:1;
+        position: relative;
+
+        &--img {
+            position: absolute;
+            left:50%;
+            bottom:50%;
+            transform: translate(-50% ,50%);
+        }
+
+        &--icon {
+            width:100%;
+            object-fit: contain;
+        }
+    }
+}

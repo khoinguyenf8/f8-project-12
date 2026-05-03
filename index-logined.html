@@ -17,14 +17,11 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/main.css" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
         <!-- Js -->
         <script src="./assets/js/scripts.js"></script>
-
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
-    <body class="body-position">
+    <body>
         <!-- Header -->
         <header id="header" class="header"></header>
 
@@ -35,20 +32,12 @@
         <footer id="footer" class="footer"></footer>
 
         <script>
-            load("#header", "./template/header.html");
+            load("#header", "./template/header-logined.html");
             load("#content", "./pages/home.html");
             if (document.querySelector("#community")) {
                 load("#community", "../template/community.html");
             }
             load("#footer", "./template/footer.html");
-
-            window.dispatchEvent(new Event("temple-loaded"));
-        </script>
-
-        <script>
-            AOS.init({
-                once: true,
-            });
         </script>
     </body>
 </html>

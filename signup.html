@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Circuit Sign-Up</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- Js -->
+        <script src="./assets/js/scripts.js"></script>
+    </head>
+    <body>
+        <div class="login">
+            <div class="login__inner">
+                <!-- Left -->
+                <div class="login__left">
+                    <h1 class="login__left--heading">Welcome Back to the online learning Circuit</h1>
+                    <p class="login__left--desc">Log In to learn something new and shine to your future career</p>
+                </div>
+
+                <!-- Right -->
+                <div class="login__right">
+                    <div class="login__right--inner">
+                        <div class="login__right--form-wrap">
+                            <label for="form-email" class="login__right--label">Email address or phone number</label>
+                            <form action="" class="login__right--form">
+                                <input
+                                    type="email"
+                                    id="form-email"
+                                    class="login__right--input"
+                                    placeholder="Email address or phone number"
+                                    required
+                                />
+                            </form>
+                            <p class="login__right--error">Email chưa đúng định dạng</p>
+
+                            <label for="password" class="login__right--label login__right--label-space">Password</label>
+                            <form action="" class="login__right--form">
+                                <input
+                                    type="password"
+                                    id="password"
+                                    class="login__right--input"
+                                    placeholder="Password"
+                                    required
+                                    minlength="6"
+                                />
+                            </form>
+                            <p class="login__right--error">Password ít nhất 6 kí tự</p>
+
+                            <label for="password" class="login__right--label login__right--label-space"
+                                >Confirm Password</label
+                            >
+                            <form action="" class="login__right--form">
+                                <input
+                                    type="password"
+                                    id="password"
+                                    class="login__right--input"
+                                    placeholder="Confirm Password"
+                                    required
+                                    minlength="6"
+                                />
+                            </form>
+                            <p class="login__right--error">Nhập lại mật khẩu</p>
+                        </div>
+
+                        <div class="login__right--btn login__right--form-submit">
+                            <a href="./index-logined.html" class="btn--text login__right--btn-link">Sign Up</a>
+                        </div>
+
+                        <span class="login__right--text">OR</span>
+
+                        <div class="login__right--continue-gg">
+                            <img src="../assets/icons/gg.png" alt="" class="login__right--icon" />
+                            <a href="#!" class="login__right--link">Continue with Google</a>
+                        </div>
+
+                        <div class="login__right--row">
+                            <span class="login__right--desc">Have an account?</span>
+                            <a href="./login.html" class="login__right--signup"> Log In</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
