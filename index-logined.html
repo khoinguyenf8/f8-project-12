@@ -17,11 +17,14 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
         <!-- Js -->
         <script src="./assets/js/scripts.js"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     </head>
-    <body>
+    <body class="body-position">
         <!-- Header -->
         <header id="header" class="header"></header>
 
@@ -38,6 +41,16 @@
                 load("#community", "./template/community.html");
             }
             load("#footer", "./template/footer.html");
+
+            window.dispatchEvent(new Event("temple-loaded"));
+        </script>
+
+        <script>
+            AOS.init({
+                once: true,
+                duration: 1000, // Thời gian hiệu ứng chạy (1000ms = 1s). Bạn có thể tăng lên 2000 để chậm hơn nữa.
+                asing: "ease-in-out",
+            });
         </script>
     </body>
 </html>
